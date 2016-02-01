@@ -1,0 +1,31 @@
+p{
+  font-family: sans-serif;
+}
+#myFirstDiv {
+  background-color: green;
+  color: black;
+  margin: 80px;
+  padding: 20px;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+img {
+  height: 50px;
+  width: 50px;
+ }
+ li a{
+   color: yellow;
+}
+
+.nottestClass {
+  margin-left: 20px;
+}
+
+.hasBackgroundImage {
+  height: 50px;
+  width: 50px;
+  background-color: steelblue;
+  background-image:
+url('http://engineering.nyu.edu/sites/all/themes/polyframe/og_image_default.png');
+  background-size: 100%
+}

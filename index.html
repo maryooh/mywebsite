@@ -1,0 +1,161 @@
+<html>
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+	<style type="text/css">
+		p{
+  font-family: sans-serif;
+}
+#myFirstDiv {
+  background-color: purple;
+  color: black;
+  margin: 80px;
+  padding: 20px;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+img {
+  height: 50px;
+  width: 50px;
+ }
+ li a{
+   color: yellow;
+}
+
+.nottestClass {
+  margin-left: 20px;
+}
+
+.hasBackgroundImage {
+  height: 50px;
+  width: 50px;
+  background-color: steelblue;
+  background-image:
+url('http://engineering.nyu.edu/sites/all/themes/polyframe/og_image_default.png');
+  background-size: 100%
+}
+
+</style>
+</head>
+
+
+
+<body>
+  <script src="js/scripts.js"></script>
+ 
+
+<div id='myFirstDiv'>
+Hello World!
+<h1>
+First Class for Web Development
+</h1>
+<h3 class='nottestClass'>
+This is the subtitle
+</h3>
+
+<div class='hasBackgroundImage'>
+  
+
+<div class='testClass'>Test</div>
+<div class='testClass'>Test</div>
+<div class='nottestClass'>Not</div>
+</div>
+
+<p>
+This is a pharagraph
+</p>
+
+<div>
+<ul>
+<li><img
+src='https://pbs.twimg.com/profile_images/578214134027665408/tdBcCceW.jpeg'>
+ Instructor</li>
+</ul>
+
+
+<p>
+This is also a paragraph
+</p>
+ 
+<button id='alert'>
+Show an alert
+</button>
+
+<button id="makeGreen">
+ Make Green
+ 
+</button>
+
+<button id="makeBlue">
+ Make Blue
+ 
+</button>
+
+
+<button id="makeRed">
+ Make Red
+ 
+</button>
+
+<h4>My Number is <span
+id='myNumber'>1</span></h4>
+  <button id= "addOne">Add 1
+  </button>
+  
+  <button id= "SubstractOne">Substract 1
+  </button>
+
+</div>
+
+
+
+		$('#alert').click( function(){
+		alert('You clicked me!');});
+
+
+		$('#makeRed').click( function(){$('#myFirstDiv').css('background-color','red');});
+		//initialize the variable "myNumber"
+		var myNumber =1;
+		//Listeners
+		//When the add button is clicked, increment myNumber
+		//and update page
+		$('#addOne').click(function(){myNumber = myNumber +1;
+		$('#myNumber').text(myNumber);
+		}
+		)
+
+		$('#SubstractOne').click(function(){myNumber = myNumber -1;
+		$('#myNumber').text(myNumber);
+		}
+		)
+
+
+
+
+		$('#makeBlue').click( function(){$('#myFirstDiv').css('background-color','blue');});
+
+
+		$('#makeGreen').click( function(){$('#myFirstDiv').css('background-color','green')
+
+		//$('#myNumber').text('5');
+
+		$('#myNumber').text('5');
+
+		}); 
+	  <script src="js/jquery.js"></script>
+ 
+ </body>
+
+</html>
